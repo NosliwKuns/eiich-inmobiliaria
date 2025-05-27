@@ -7,7 +7,7 @@ const navItems = [
 ]
 ---
 
-<nav class="bg-midnight-blue text-white sticky top-0 z-50 shadow-lg" x-data="{ open: false }">
+<nav class="bg-transparent text-white fixed top-0 z-50 w-full" x-data="{ open: false }">
 	<div class="container mx-auto px-4 py-3">
 		<div class="flex justify-between items-center">
 			<div class="flex items-center">
@@ -24,12 +24,12 @@ const navItems = [
 			</div>
 
 			<!-- Menú escritorio -->
-			<div class="hidden md:flex space-x-8">
+			<div class="hidden md:flex items-center text-sm space-x-8">
 				<a href="#" class="hover:text-dark-orange transition">Inicio</a>
 				<a href="#" class="hover:text-dark-orange transition">Propiedades en venta</a>
 				<a href="#" class="hover:text-dark-orange transition">Vende tu propiedad</a>
 				<a href="#" class="hover:text-dark-orange transition">Nosotros</a>
-				<a href="#" class="bg-dark-orange px-4 py-2 rounded hover:bg-cornflower-blue transition"> Contacto </a>
+				<a href="#" class="bg-transparent border px-4 pt-2 pb-2.5 rounded hover:bg-cornflower-blue transition"> Contacto </a>
 			</div>
 		</div>
 

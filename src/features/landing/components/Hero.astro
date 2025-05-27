@@ -1,36 +1,177 @@
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
-	<div class="absolute inset-0 bg-black opacity-40"></div>
-	<div
-		class="bg-[url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center absolute inset-0"
-	>
+<section class="hero-container max-h-[800px] h-screen min-h-[600px] overflow-hidden relative">
+	<div class="parallax-bg" id="parallax-bg"></div>
+	<div class="building-image" id="building-image"></div>
+
+	<!-- Floating decorative elements -->
+	<div class="floating-element left-10 top-1/4 opacity-20">
+		<div class="w-16 h-16 rounded-full bg-[#fe7f32]"></div>
 	</div>
 
-	<div class="container mx-auto px-4 z-10 text-center text-white">
-		<h1 class="text-4xl md:text-6xl font-bold mb-6">
-			Encuentra tu <span class="text-dark-orange">hogar ideal</span>
-		</h1>
-		<p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-			Más de 10 años ayudando a familias a encontrar la propiedad perfecta
-		</p>
-		<div class="flex flex-col sm:flex-row justify-center gap-4">
-			<a
-				href="#"
-				class="bg-dark-orange hover:bg-cornflower-blue text-white px-8 py-4 rounded font-bold transition"
-			>
-				Ver propiedades
-			</a>
-			<a
-				href="#"
-				class="bg-transparent border-2 border-white hover:bg-white hover:text-midnight-blue text-white px-8 py-4 rounded font-bold transition"
-			>
-				Vender propiedad
-			</a>
+	<div class="container mx-auto px-4 h-full">
+		<div class="hero-content">
+			<div class="max-w-2xl text-white md:ml-16 hero-text-container">
+				<h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+					Encuentra tu <span class="text-[#fe7f32]">inmueble ideal</span> con Eiich Inmobiliaria
+				</h1>
+				<p class="mb-10 opacity-90 max-w-xl">
+					En Eiich Inmobiliaria, te damos la bienvenida a un espacio donde tus sueños y proyectos toman forma.
+					Nos especializamos en la compra y venta de departamentos, terrenos, locales comerciales y más,
+					ofreciendo un servicio personalizado, confiable y transparente.
+				</p>
+				<!-- <p class="mb-10 opacity-90">
+					Con amplia experiencia y compromiso buscamos ayudarte a encontrar la propiedad ideal, con el
+					respaldo de un equipo profesional y atento a tus necesidades.
+				</p> -->
+				<div class="flex flex-col sm:flex-row gap-4 justify-start">
+					<a
+						href="#"
+						class="bg-[#fe7f32] hover:bg-[#e6732b] text-white px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 shadow-lg flex items-center justify-center"
+					>
+						<i class="fas fa-search mr-2"></i> Buscar propiedades
+					</a>
+					<a
+						href="#"
+						class="bg-transparent border-2 border-white hover:bg-white hover:text-[#0c2647] text-white px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 flex items-center justify-center"
+					>
+						<i class="fas fa-phone mr-2"></i> Contactar asesor
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="absolute bottom-10 left-0 right-0 flex justify-center">
-		<a href="#featured" class="text-white animate-bounce">
+	<div class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
+		<a href="#featured" class="text-white">
 			<i class="fas fa-chevron-down text-3xl"></i>
 		</a>
 	</div>
 </section>
+
+<style>
+	.hero-container {
+		position: relative;
+	}
+
+	.parallax-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("/src/assets/images/fondo.png");
+		background-size: cover;
+		background-position: center;
+		will-change: transform;
+		z-index: -2;
+	}
+
+	.building-image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		background-image: url("/src/assets/images/edificio.png");
+		background-size: cover;
+		background-position: center;
+		transform: perspective(10px) rotateX(0deg);
+		transform-origin: right center;
+		will-change: transform;
+		z-index: -1;
+		opacity: 0.8;
+		clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: left;
+	}
+
+	.hero-text-container {
+		margin-top: 0;
+		transform: translateY(0);
+	}
+
+	.floating-element {
+		position: absolute;
+		animation: float 6s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		0% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.building-image {
+			width: 100%;
+			transform: perspective(1000px) rotateX(20deg);
+			opacity: 0.6;
+			clip-path: none;
+		}
+
+		.hero-content {
+			padding-top: 0;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.hero-text-container {
+			background-color: rgba(12, 38, 71, 0.7);
+			padding: 2rem;
+			border-radius: 1rem;
+			margin: 0 auto;
+		}
+	}
+</style>
+
+<script>
+	// Enhanced parallax effect usando Alpine.js data
+	document.addEventListener("DOMContentLoaded", function () {
+		// Smooth scrolling for anchor links
+		// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+		// 	anchor.addEventListener("click", function (e) {
+		// 		e.preventDefault()
+
+		// 		const targetId = this.getAttribute("href")
+		// 		if (targetId === "#") return
+
+		// 		const targetElement = document.querySelector(targetId)
+		// 		if (targetElement) {
+		// 			targetElement.scrollIntoView({
+		// 				behavior: "smooth",
+		// 			})
+		// 		}
+		// 	})
+		// })
+
+		// Enhanced parallax effect
+		document.addEventListener("mousemove", function (e) {
+			const x = e.clientX / window.innerWidth
+			const y = e.clientY / window.innerHeight
+
+			const bg = document.getElementById("parallax-bg")
+			const building = document.getElementById("building-image")
+
+			if (bg && building) {
+				// More subtle background movement
+				// bg.style.transform = `translate(${x * 10 - 5}px, ${y * 10 - 5}px)`
+
+				// Stronger building perspective effect
+				// building.style.transform = `perspective(1000px) rotateX(${15 + y * 10}deg) rotateY(${x * 4 - 2}deg)`
+			}
+		})
+	})
+</script>

@@ -1,5 +1,5 @@
 ---
-import Layout from "@core/layouts/Layout.astro"
+import MainLayout from "@core/layouts/MainLayout.astro"
 import Hero from "@features/landing/components/Hero.astro"
 import Highlights from "@features/landing/components/Highlights.astro"
 import FeaturedProperties from "@features/landing/components/FeaturedProperties.astro"
@@ -7,9 +7,10 @@ import InfoSection from "@features/landing/components/InfoSection.astro"
 import RecentProperties from "@features/landing/components/RecentProperties.astro"
 import ParallaxBanner from "@features/landing/components/ParallaxBanner.astro"
 import GallerySection from "@features/landing/components/GallerySection.astro"
+import ContactCTA from "@features/landing/components/ContactCTA.astro"
 ---
 
-<Layout title="Eiich Inmobiliaria">
+<MainLayout title="Eiich Inmobiliaria">
 	<Hero />
 	<Highlights />
 	<FeaturedProperties />
@@ -17,4 +18,5 @@ import GallerySection from "@features/landing/components/GallerySection.astro"
 	<RecentProperties />
 	<ParallaxBanner />
 	<GallerySection />
-</Layout>
+	<ContactCTA />
+</MainLayout>
