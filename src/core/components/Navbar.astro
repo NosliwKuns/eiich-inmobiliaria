@@ -1,0 +1,47 @@
+---
+const navItems = [
+	{ name: "Inicio", href: "/" },
+	{ name: "Propiedades en venta", href: "/properties" },
+	{ name: "Vende tu propiedad", href: "/sell" },
+	{ name: "Nosotros", href: "/about" },
+]
+---
+
+<nav class="bg-midnight-blue text-white sticky top-0 z-50 shadow-lg" x-data="{ open: false }">
+	<div class="container mx-auto px-4 py-3">
+		<div class="flex justify-between items-center">
+			<div class="flex items-center">
+				<a href="#" class="text-2xl font-bold">
+					<span class="text-dark-orange">Eiich</span> Inmobiliaria
+				</a>
+			</div>
+
+			<!-- Botón menú móvil -->
+			<div class="md:hidden">
+				<button @click="open = !open" class="text-white focus:outline-none">
+					<i :class="open ? 'fas fa-times text-2xl' : 'fas fa-bars text-2xl'"></i>
+				</button>
+			</div>
+
+			<!-- Menú escritorio -->
+			<div class="hidden md:flex space-x-8">
+				<a href="#" class="hover:text-dark-orange transition">Inicio</a>
+				<a href="#" class="hover:text-dark-orange transition">Propiedades en venta</a>
+				<a href="#" class="hover:text-dark-orange transition">Vende tu propiedad</a>
+				<a href="#" class="hover:text-dark-orange transition">Nosotros</a>
+				<a href="#" class="bg-dark-orange px-4 py-2 rounded hover:bg-cornflower-blue transition"> Contacto </a>
+			</div>
+		</div>
+
+		<!-- Menú móvil -->
+		<div x-show="open" x-transition class="md:hidden mt-4 pb-4">
+			<a href="#" class="block py-2 hover:text-dark-orange transition">Inicio</a>
+			<a href="#" class="block py-2 hover:text-dark-orange transition">Propiedades en venta</a>
+			<a href="#" class="block py-2 hover:text-dark-orange transition">Vende tu propiedad</a>
+			<a href="#" class="block py-2 hover:text-dark-orange transition">Nosotros</a>
+			<a href="#" class="block bg-dark-orange px-4 py-2 rounded hover:bg-cornflower-blue transition w-max mt-2">
+				Contacto
+			</a>
+		</div>
+	</div>
+</nav>
