@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alpinejs/intersect@^3.14.9":
+  version "3.14.9"
+  resolved "https://registry.yarnpkg.com/@alpinejs/intersect/-/intersect-3.14.9.tgz#2a0b3c56e660f3c939c30d0d0b92479fea61d41b"
+  integrity sha512-6LLIqrESA5kxuTbDJshtItfHmZoiiDOpf8lOeRrNtYjSj/FkggDpnjD+ZFGF5btEOVSpWic2VmG2BejR/aMxDw==
+
 "@ampproject/remapping@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.3.0.tgz#ed441b6fa600072520ce18b43d2c8cc8caecc7f4"
@@ -9,6 +14,11 @@
   dependencies:
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
+
+"@astrojs/alpinejs@^0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@astrojs/alpinejs/-/alpinejs-0.4.8.tgz#4206e98285bf4192e47cd5ce7bd129a1327f7e31"
+  integrity sha512-aNiJELzqunTuwXZEzqLmiTzMirvrKI4tYKauyAxZbk+Stu/xUZIgnfXeWSy87yF2l/QpnYELgNTDlFduUbp/nw==
 
 "@astrojs/compiler@^2.11.0":
   version "2.12.0"
@@ -701,6 +711,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/alpinejs@^3.13.11":
+  version "3.13.11"
+  resolved "https://registry.yarnpkg.com/@types/alpinejs/-/alpinejs-3.13.11.tgz#ecf938c0f4678d617c77933961e9385e45ece148"
+  integrity sha512-3KhGkDixCPiLdL3Z/ok1GxHwLxEWqQOKJccgaQL01wc0EVM2tCTaqlC3NIedmxAXkVzt/V6VTM8qPgnOHKJ1MA==
+
 "@types/debug@^4.0.0":
   version "4.1.12"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.12.tgz#a155f21690871953410df4b6b6f53187f0500917"
@@ -763,10 +778,29 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.3.0.tgz#d06bbb384ebcf6c505fde1c3d0ed4ddffe0aaff8"
   integrity sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==
 
+"@vue/reactivity@~3.1.1":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.1.5.tgz#dbec4d9557f7c8f25c2635db1e23a78a729eb991"
+  integrity sha512-1tdfLmNjWG6t/CsPldh+foumYFo3cpyCHgBYQ34ylaMsJ+SNHQ1kApMIa8jN+i593zQuaw3AdWH0nJTARzCFhg==
+  dependencies:
+    "@vue/shared" "3.1.5"
+
+"@vue/shared@3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.1.5.tgz#74ee3aad995d0a3996a6bb9533d4d280514ede03"
+  integrity sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==
+
 acorn@^8.14.1:
   version "8.14.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.1.tgz#721d5dc10f7d5b5609a891773d47731796935dfb"
   integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
+
+alpinejs@^3.14.9:
+  version "3.14.9"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.14.9.tgz#381a050152acb221b2209d9398935d5cd4c18afc"
+  integrity sha512-gqSOhTEyryU9FhviNqiHBHzgjkvtukq9tevew29fTj+ofZtfsYriw4zPirHHOAy9bw8QoL3WGhyk7QqCh5AYlw==
+  dependencies:
+    "@vue/reactivity" "~3.1.1"
 
 ansi-align@^3.0.1:
   version "3.0.1"
