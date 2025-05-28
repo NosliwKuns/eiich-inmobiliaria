@@ -1,12 +1,10 @@
 <section id="featured" class="pb-16 pt-6 bg-white">
 	<div class="container mx-auto px-4">
 		<div class="text-center mb-12">
-			<h2 class="text-3xl md:text-4xl font-bold mb-4">
-				Propiedades <span class="text-accent">destacadas</span>
+			<h2 class="text-3xl md:text-4xl font-bold uppercase mb-4">
+				Propiedades <span class="text-dark-orange">destacadas</span>
 			</h2>
-			<p class="text-lg text-gray-600 max-w-2xl mx-auto">
-				Selección exclusiva de las mejores propiedades en el mercado
-			</p>
+			<p class="text-gray-600 max-w-2xl mx-auto">Selección exclusiva de las mejores propiedades en el mercado</p>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -35,9 +33,7 @@
 						<span><i class="fas fa-bath text-highlight mr-1"></i> 3 baños</span>
 						<span><i class="fas fa-ruler-combined text-highlight mr-1"></i> 320 m²</span>
 					</div>
-					<div
-						class="property-overlay absolute inset-0 bg-black/70 flex items-center justify-center"
-					>
+					<div class="property-overlay absolute inset-0 bg-midnight-blue/70 flex items-center justify-center">
 						<a
 							href="#"
 							class="bg-dark-orange hover:bg-accent-dark text-white px-6 py-3 rounded font-bold transition"
@@ -75,9 +71,7 @@
 						<span><i class="fas fa-bath text-highlight mr-1"></i> 2 baños</span>
 						<span><i class="fas fa-ruler-combined text-highlight mr-1"></i> 180 m²</span>
 					</div>
-					<div
-						class="property-overlay absolute inset-0 bg-black/70 flex items-center justify-center"
-					>
+					<div class="property-overlay absolute inset-0 bg-midnight-blue/70 flex items-center justify-center">
 						<a
 							href="#"
 							class="bg-dark-orange hover:bg-accent-dark text-white px-6 py-3 rounded font-bold transition"
@@ -112,9 +106,7 @@
 						<span><i class="fas fa-bath text-highlight mr-1"></i> 4 baños</span>
 						<span><i class="fas fa-ruler-combined text-highlight mr-1"></i> 450 m²</span>
 					</div>
-					<div
-						class="property-overlay absolute inset-0 bg-black/70 flex items-center justify-center"
-					>
+					<div class="property-overlay absolute inset-0 bg-midnight-blue/70 flex items-center justify-center">
 						<a
 							href="#"
 							class="bg-dark-orange hover:bg-dark-orange text-white px-6 py-3 rounded font-bold transition"
@@ -128,7 +120,7 @@
 		<div class="text-center mt-12">
 			<a
 				href="#"
-				class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded font-bold transition"
+				class="inline-block bg-midnight-blue hover:bg-midnight-blue/90 text-white px-8 py-3 rounded font-bold transition"
 				>Ver todas las propiedades</a
 			>
 		</div>
@@ -141,9 +133,14 @@
 		transform: translateY(0);
 	}
 
+	.property-card:hover img {
+		scale: 1.1;
+	}
+
 	.property-overlay {
 		transition: all 0.3s ease;
 		opacity: 0;
 		transform: translateY(20px);
+		backdrop-filter: blur(12);
 	}
 </style>

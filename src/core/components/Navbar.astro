@@ -26,20 +26,28 @@ const navItems = [
 			<!-- Menú escritorio -->
 			<div class="hidden md:flex items-center text-sm space-x-8">
 				<a href="#" class="hover:text-dark-orange transition">Inicio</a>
-				<a href="#" class="hover:text-dark-orange transition">Propiedades en venta</a>
+				<a href="#" class="hover:text-dark-orange transition">Propiedades</a>
 				<a href="#" class="hover:text-dark-orange transition">Vende tu propiedad</a>
 				<a href="#" class="hover:text-dark-orange transition">Nosotros</a>
-				<a href="#" class="bg-transparent border px-4 pt-2 pb-2.5 rounded hover:bg-cornflower-blue transition"> Contacto </a>
+				<a
+					href="#"
+					class="bg-transparent border border-white px-8 py-2.5 rounded hover:bg-white hover:text-midnight-blue transition"
+				>
+					Contacto
+				</a>
 			</div>
 		</div>
 
 		<!-- Menú móvil -->
 		<div x-show="open" x-transition class="md:hidden mt-4 pb-4">
 			<a href="#" class="block py-2 hover:text-dark-orange transition">Inicio</a>
-			<a href="#" class="block py-2 hover:text-dark-orange transition">Propiedades en venta</a>
+			<a href="#" class="block py-2 hover:text-dark-orange transition">Propiedades</a>
 			<a href="#" class="block py-2 hover:text-dark-orange transition">Vende tu propiedad</a>
 			<a href="#" class="block py-2 hover:text-dark-orange transition">Nosotros</a>
-			<a href="#" class="block bg-dark-orange px-4 py-2 rounded hover:bg-cornflower-blue transition w-max mt-2">
+			<a
+				href="#"
+				class="block bg-dark-orange px-4 py-2 rounded hover:bg-white hover:text-midnight-blue transition w-max mt-2"
+			>
 				Contacto
 			</a>
 		</div>
