@@ -1,0 +1,238 @@
+---
+import MainLayout from "@core/layouts/MainLayout.astro"
+---
+
+<MainLayout title="Nosotros">
+	<!-- Hero Section -->
+	<section class="hero-section text-white py-20 md:py-32">
+		<div class="container mx-auto px-4 text-center">
+			<h1 class="text-4xl md:text-5xl font-bold mb-6">Nuestra Historia</h1>
+			<p class="text-xl md:text-2xl max-w-3xl mx-auto">
+				Más de 20 años ayudando a las familias a encontrar su hogar ideal
+			</p>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="py-16 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col md:flex-row items-center">
+				<div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+					<img
+						src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+						alt="Equipo de trabajo"
+						class="rounded-lg shadow-xl w-full h-auto"
+					/>
+				</div>
+				<div class="md:w-1/2">
+					<h2 class="text-3xl font-bold text-[#0c2647] mb-6">Quiénes Somos</h2>
+					<p class="text-gray-600 mb-6 leading-relaxed">
+						Somos una empresa inmobiliaria con más de dos décadas de experiencia en el mercado,
+						especializados en la compra, venta y alquiler de propiedades residenciales y comerciales.
+						Nuestro equipo de profesionales altamente capacitados está comprometido con brindar un servicio
+						personalizado y transparente.
+					</p>
+					<p class="text-gray-600 mb-6 leading-relaxed">
+						Nos enorgullece haber ayudado a miles de familias a encontrar el hogar perfecto, así como a
+						inversores a maximizar sus rendimientos en el mercado inmobiliario.
+					</p>
+					<div class="flex flex-wrap gap-4">
+						<div class="bg-[#5193e6] text-white px-6 py-3 rounded-lg">
+							<span class="font-bold block text-xl">20+</span>
+							<span>Años de experiencia</span>
+						</div>
+						<div class="bg-[#fe7f32] text-white px-6 py-3 rounded-lg">
+							<span class="font-bold block text-xl">5,000+</span>
+							<span>Propiedades vendidas</span>
+						</div>
+						<div class="bg-[#0c2647] text-white px-6 py-3 rounded-lg">
+							<span class="font-bold block text-xl">98%</span>
+							<span>Satisfacción del cliente</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Mission & Vision -->
+	<section class="py-16 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col md:flex-row gap-10">
+				<!-- Mission -->
+				<div class="md:w-1/2 bg-[#f4efea] p-8 rounded-xl">
+					<div class="flex items-center mb-6">
+						<div
+							class="w-12 h-12 rounded-full bg-[#fe7f32] text-white flex items-center justify-center mr-4"
+						>
+							<i class="fas fa-bullseye text-xl"></i>
+						</div>
+						<h2 class="text-2xl font-bold text-[#0c2647]">Misión</h2>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						Facilitar el acceso a viviendas y propiedades comerciales de calidad, brindando asesoramiento
+						experto y soluciones personalizadas que generen valor para nuestros clientes. Nos comprometemos
+						a operar con integridad, transparencia y profesionalismo en cada transacción.
+					</p>
+				</div>
+
+				<!-- Vision -->
+				<div class="md:w-1/2 bg-[#f4efea] p-8 rounded-xl">
+					<div class="flex items-center mb-6">
+						<div
+							class="w-12 h-12 rounded-full bg-[#5193e6] text-white flex items-center justify-center mr-4"
+						>
+							<i class="fas fa-eye text-xl"></i>
+						</div>
+						<h2 class="text-2xl font-bold text-[#0c2647]">Visión</h2>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						Ser reconocidos como la inmobiliaria líder en innovación y servicio al cliente, expandiendo
+						nuestra presencia a nivel nacional mientras mantenemos nuestros valores fundamentales. Aspiramos
+						a transformar la experiencia de compra y venta de propiedades mediante tecnología y atención
+						personalizada.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Values Section -->
+	<section class="py-16 bg-[#0c2647] text-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold mb-12 text-center">Nuestros Valores</h2>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Value 1 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-handshake"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Integridad</h3>
+					<p class="text-gray-600">
+						Actuamos con honestidad y transparencia en todas nuestras operaciones, manteniendo siempre
+						nuestra palabra.
+					</p>
+				</div>
+
+				<!-- Value 2 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-users"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Enfoque al Cliente</h3>
+					<p class="text-gray-600">
+						Nuestros clientes son nuestra prioridad. Escuchamos sus necesidades y trabajamos para superar
+						sus expectativas.
+					</p>
+				</div>
+
+				<!-- Value 3 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-lightbulb"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Innovación</h3>
+					<p class="text-gray-600">
+						Buscamos constantemente nuevas formas de mejorar nuestros servicios mediante tecnología y
+						procesos innovadores.
+					</p>
+				</div>
+
+				<!-- Value 4 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-chart-line"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Excelencia</h3>
+					<p class="text-gray-600">
+						Nos esforzamos por la perfección en cada detalle, desde el asesoramiento hasta el servicio
+						post-venta.
+					</p>
+				</div>
+
+				<!-- Value 5 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Pasión</h3>
+					<p class="text-gray-600">
+						Amamos lo que hacemos y eso se refleja en nuestro compromiso diario con cada cliente y
+						propiedad.
+					</p>
+				</div>
+
+				<!-- Value 6 -->
+				<div class="values-card bg-white text-[#0c2647] p-8 rounded-lg transition duration-300">
+					<div class="values-icon text-4xl mb-4 text-[#5193e6]">
+						<i class="fas fa-shield-alt"></i>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Responsabilidad</h3>
+					<p class="text-gray-600">
+						Asumimos con seriedad nuestro rol como asesores inmobiliarios, protegiendo los intereses de
+						nuestros clientes.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="py-16 bg-cornflower-blue text-white">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-6">¿Listo para encontrar tu propiedad ideal?</h2>
+			<p class="text-xl mb-8 max-w-2xl mx-auto">
+				Nuestro equipo está listo para ayudarte en cada paso del proceso.
+			</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a
+					href="#"
+					class="bg-white text-midnight-blue font-bold py-3 px-8 rounded-lg hover:bg-[#0c2647] hover:text-white transition"
+				>
+					<i class="fas fa-phone-alt mr-2"></i> Contáctanos
+				</a>
+				<a
+					href="#"
+					class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-[#fe7f32] transition"
+				>
+					<i class="fas fa-search mr-2"></i> Ver Propiedades
+				</a>
+			</div>
+		</div>
+	</section>
+</MainLayout>
+
+<style>
+	.hero-section {
+		background: linear-gradient(rgba(12, 38, 71, 0.8), rgba(12, 38, 71, 0.8)),
+			url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.timeline-item:not(:last-child)::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -40px;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 40px;
+		background-color: #5193e6;
+	}
+
+	.team-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.values-card:hover {
+		/* background-color: #f4efea; */
+		/* color: white; */
+	}
+
+	.values-card:hover .values-icon {
+		color: #fe7f32;
+	}
+</style>

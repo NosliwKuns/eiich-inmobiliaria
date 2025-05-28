@@ -1,0 +1,46 @@
+<div class="property-card bg-white rounded-lg overflow-hidden shadow-lg relative">
+	<div class="relative overflow-hidden h-48">
+		<img
+			src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2070&q=80"
+			alt="Casa moderna"
+			class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+		/>
+	</div>
+	<div class="p-6">
+		<div class="flex justify-between items-start mb-2">
+			<h3 class="text-xl font-bold">Residencia Lumina</h3>
+			<span class="text-[#fe7f32] font-bold">$1,100,000</span>
+		</div>
+		<p class="text-sm text-gray-600 mb-4">
+			<i class="fas fa-map-marker-alt text-cornflower-blue mr-2"></i> Barrio Norte, Buenos Aires
+		</p>
+		<div class="flex justify-between text-xs text-gray-500 border-t border-b border-gray-100 py-3 mb-4">
+			<span><i class="fas fa-bed text-cornflower-blue mr-1"></i> 4 dorm.</span>
+			<span><i class="fas fa-bath text-cornflower-blue mr-1"></i> 3 baños</span>
+			<span><i class="fas fa-ruler-combined text-cornflower-blue mr-1"></i> 320 m²</span>
+		</div>
+		<div class="property-overlay absolute inset-0 bg-midnight-blue/70 flex items-center justify-center">
+			<a href="#" class="bg-dark-orange hover:bg-accent-dark text-white px-6 py-3 rounded font-bold transition"
+				>Ver detalles</a
+			>
+		</div>
+	</div>
+</div>
+
+<style>
+	.property-card:hover .property-overlay {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.property-card:hover img {
+		scale: 1.1;
+	}
+
+	.property-overlay {
+		transition: all 0.3s ease;
+		opacity: 0;
+		transform: translateY(20px);
+		backdrop-filter: blur(12);
+	}
+</style>

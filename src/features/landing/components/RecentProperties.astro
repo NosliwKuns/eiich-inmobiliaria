@@ -1,3 +1,7 @@
+---
+import PropertiesCard from "@core/components/PropertiesCard.astro"
+---
+
 <!-- Recent Properties -->
 <section class="py-16 bg-white">
 	<div class="container mx-auto px-4">
@@ -5,91 +9,25 @@
 			<h2 class="text-3xl md:text-4xl font-bold uppercase mb-4">
 				Propiedades <span class="text-[#fe7f32]">recientes</span>
 			</h2>
-			<p class="text-gray-600 max-w-2xl mx-auto">Nuestras últimas incorporaciones al portafolio</p>
+			<p class="text-gray-600 max-w-2xl mx-auto">
+				Explora las nuevas propiedades que se han sumado recientemente
+			</p>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			<!-- Property 1 -->
-			<div class="property-card bg-white rounded-lg overflow-hidden shadow-lg relative">
-				<div class="relative overflow-hidden h-48">
-					<img
-						src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-						alt="Departamento moderno"
-						class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-					/>
-				</div>
+			<PropertiesCard />
 
-				<div class="p-4">
-					<div class="flex justify-between items-start mb-2">
-						<h3 class="text-lg font-bold">Loft Palermo</h3>
-						<span class="text-[#fe7f32] font-bold">$650,000</span>
-					</div>
-					<p class="text-sm text-gray-600 mb-3">
-						<i class="fas fa-map-marker-alt text-[#5193e6] mr-1"></i> Palermo, Buenos Aires
-					</p>
+			<PropertiesCard />
 
-					<div class="flex justify-between text-xs text-gray-500">
-						<span><i class="fas fa-bed text-[#5193e6] mr-1"></i> 2 dorm.</span>
-						<span><i class="fas fa-bath text-[#5193e6] mr-1"></i> 1 baño</span>
-						<span><i class="fas fa-ruler-combined text-[#5193e6] mr-1"></i> 85 m²</span>
-					</div>
-				</div>
-			</div>
+			<PropertiesCard />
+		</div>
 
-			<!-- Property 2 -->
-			<div class="property-card bg-white rounded-lg overflow-hidden shadow-lg relative">
-				<div class="relative overflow-hidden h-48">
-					<img
-						src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-						alt="Casa tradicional"
-						class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-					/>
-				</div>
-
-				<div class="p-4">
-					<div class="flex justify-between items-start mb-2">
-						<h3 class="text-lg font-bold">Casa Belgrano</h3>
-						<span class="text-[#fe7f32] font-bold">$1,100,000</span>
-					</div>
-					<p class="text-sm text-gray-600 mb-3">
-						<i class="fas fa-map-marker-alt text-[#5193e6] mr-1"></i> Belgrano, Buenos Aires
-					</p>
-
-					<div class="flex justify-between text-xs text-gray-500">
-						<span><i class="fas fa-bed text-[#5193e6] mr-1"></i> 3 dorm.</span>
-						<span><i class="fas fa-bath text-[#5193e6] mr-1"></i> 2 baños</span>
-						<span><i class="fas fa-ruler-combined text-[#5193e6] mr-1"></i> 150 m²</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- Property 3 -->
-			<div class="property-card bg-white rounded-lg overflow-hidden shadow-lg relative">
-				<div class="relative overflow-hidden h-48">
-					<img
-						src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-						alt="Penthouse"
-						class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-					/>
-				</div>
-
-				<div class="p-4">
-					<div class="flex justify-between items-start mb-2">
-						<h3 class="text-lg font-bold">Penthouse Recoleta</h3>
-						<span class="text-[#fe7f32] font-bold">$1,800,000</span>
-					</div>
-					<p class="text-sm text-gray-600 mb-3">
-						<i class="fas fa-map-marker-alt text-[#5193e6] mr-1"></i> Recoleta, Buenos Aires
-					</p>
-
-					<div class="flex justify-between text-xs text-gray-500">
-						<span><i class="fas fa-bed text-[#5193e6] mr-1"></i> 4 dorm.</span>
-						<span><i class="fas fa-bath text-[#5193e6] mr-1"></i> 3 baños</span>
-						<span><i class="fas fa-ruler-combined text-[#5193e6] mr-1"></i> 220 m²</span>
-					</div>
-				</div>
-			</div>
-
+		<div class="text-center mt-12">
+			<a
+				href="#"
+				class="inline-block bg-midnight-blue hover:bg-midnight-blue/90 text-white px-8 py-3 rounded font-bold transition"
+				>Ver todas las propiedades</a
+			>
 		</div>
 	</div>
 </section>
