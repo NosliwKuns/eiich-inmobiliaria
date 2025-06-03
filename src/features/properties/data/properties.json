@@ -1,28 +1,40 @@
-[{
-	"id": "prop-001",
-	"title": "¡Gran oportunidad de inversión en plena Av. Perú!",
-	"address": "Av. Perú 3775, San Martín de Porres, Lima",
-	"area": 360,
-	"rooms": 15,
-	"bathrooms": null,
-	"floors": 4,
-	"location": "San Martín de Porres, Lima",
-	"description": "Se vende amplio inmueble de 4 pisos, estratégicamente ubicado en una de las avenidas más transitadas y comerciales de Lima Norte: Av. Perú 3775, San Martín de Porres.",
-	"highlights": [
-		"Ideal para hostal, oficinas, consultorios, academias o proyecto multifamiliar.",
-		"Excelente conectividad y alto flujo peatonal y vehicular.",
-		"Cerca de mercados, bancos, colegios, comercios y paraderos.",
-		"Ubicación céntrica, alto potencial comercial y gran retorno de inversión."
-	],
-	"images": [
-		"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888365/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/epowwdo0abf72itmvuwx.webp",
-		"/images/propiedades/prop-001/room.jpg",
-		"/images/propiedades/prop-001/roof.jpg"
-	],
-	"contact": {
-		"message": "Contáctanos para más detalles o agendar una visita."
-	},
-	"tagline": "Haz crecer tu inversión en el corazón de Lima Norte.",
-	"featured": true,
-	"createdAt": "2025-06-01"
-}]
+[
+	{
+		"id": "prop-001",
+		"title": "Hospedaje equipado en venta en San Martín de Porres",
+		"slug": "hospedaje-equipado-en-venta-en-san-martin-de-porres",
+		"price": "$550,000 USD",
+		"address": "Av. Perú 3775, San Martín de Porres, Lima",
+		"area": 360,
+		"rooms": 15,
+		"bathrooms": 15,
+		"floors": 4,
+		"location": "San Martín de Porres, Lima",
+		"description": "Se vende amplio inmueble de 4 pisos, estratégicamente ubicado en una de las avenidas más transitadas y comerciales de Lima Norte: Av. Perú 3775, San Martín de Porres.",
+		"highlights": [
+			"Ideal para hostal, oficinas, consultorios, academias o proyecto multifamiliar.",
+			"Excelente conectividad y alto flujo peatonal y vehicular.",
+			"Cerca de mercados, bancos, colegios, comercios y paraderos.",
+			"Ubicación céntrica, alto potencial comercial y gran retorno de inversión."
+		],
+		"images": [
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888365/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/epowwdo0abf72itmvuwx.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/ecu3c0retlvfssald3jf.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989222/ChatGPT_Image_3_jun_2025_11_01_30_a.m__cpnfdn.png",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/2_p9kzpa.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/gmhnj0djfsqrwl7ttxcy.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/4_tzzcc7.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/bayzcpoxi64e06mtar0p.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990001/IMG_0493_mtrpwg.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/5_yc4zdc.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/fotos_1_1_vl13iv.webp",
+			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989999/3_sznsko.webp"
+		],
+		"contact": {
+			"message": "Contáctanos para más detalles o agendar una visita."
+		},
+		"tagline": "Haz crecer tu inversión en el corazón de Lima Norte.",
+		"featured": true,
+		"createdAt": "2025-06-01"
+	}
+]

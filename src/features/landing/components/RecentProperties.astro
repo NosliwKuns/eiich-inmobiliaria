@@ -22,6 +22,7 @@ const recentProperties = properties.sort((a, b) => new Date(b.createdAt).getTime
 				recentProperties.map((property) => (
 					<PropertiesCard
 						title={property.title}
+						slug={property.slug}
 						location={property.location}
 						bathrooms={property.bathrooms}
 						area={property.area}

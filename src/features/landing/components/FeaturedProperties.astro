@@ -19,7 +19,8 @@ const featured = properties.filter((p) => p.featured)
 			<!-- Property Cards -->
 			{featured.map((property) => (
 				<PropertiesCard
-					title={property.title}
+					title={property.title} 
+					slug={property.slug}
 					location={property.location}
 					bathrooms={property.bathrooms}
 					area={property.area}

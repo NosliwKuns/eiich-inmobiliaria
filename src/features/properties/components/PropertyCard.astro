@@ -1,6 +1,7 @@
 ---
 interface Props {
 	title: string
+	slug: string
 	location: string
 	bathrooms: number | null
 	area: number
@@ -9,7 +10,7 @@ interface Props {
 	floors: number | null
 }
 
-const { title, location, bathrooms, area, rooms, image, floors } = Astro.props
+const { title, slug, location, bathrooms, area, rooms, image, floors } = Astro.props
 ---
 
 <div class="property-card bg-white rounded-lg overflow-hidden shadow-lg relative">
@@ -47,7 +48,7 @@ const { title, location, bathrooms, area, rooms, image, floors } = Astro.props
 			<span><i class="fas fa-ruler-combined text-cornflower-blue mr-1"></i> {area} m²</span>
 		</div>
 		<div class="property-overlay absolute inset-0 bg-midnight-blue/70 flex items-center justify-center">
-			<a href="#" class="bg-dark-orange hover:bg-accent-dark text-white px-6 py-3 rounded font-bold transition"
+			<a href={`/propiedades/${slug}`} class="bg-dark-orange hover:bg-accent-dark text-white px-6 py-3 rounded font-bold transition"
 				>Ver detalles</a
 			>
 		</div>

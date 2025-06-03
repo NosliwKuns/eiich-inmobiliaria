@@ -1,3 +1,7 @@
+---
+import { getWhatsappUrl } from "src/utils/whatsapp"
+---
+
 <section class="hero-container max-h-[800px] h-screen min-h-[600px] overflow-hidden relative">
 	<div class="parallax-bg" id="parallax-bg"></div>
 	<div class="building-image" id="building-image"></div>
@@ -10,7 +14,7 @@
 	<div class="container h-full">
 		<div class="hero-content">
 			<div class="max-w-2xl text-white md:ml-12 hero-text-container">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6 leading-16">
+				<h1 class="text-4xl md:text-6xl font-bold mb-6 md:leading-16">
 					Encuentra tu <span class="text-dark-orange">inmueble ideal</span> con Eiich Inmobiliaria
 				</h1>
 				<p class="mb-10 opacity-90 max-w-xl">
@@ -21,13 +25,15 @@
 
 				<div class="flex flex-col sm:flex-row gap-4 justify-start">
 					<a
-						href="#"
+						href="#featured"
 						class="bg-dark-orange hover:bg-[#e6732b] text-white px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 shadow-lg flex items-center justify-center"
 					>
 						<i class="fas fa-search mr-2"></i> Buscar propiedades
 					</a>
 					<a
-						href="#"
+						href={getWhatsappUrl()}
+						target="_blank"
+						rel="noopener noreferrer"
 						class="bg-transparent border-2 border-white hover:bg-white hover:text-midnight-blue text-white px-8 py-4 rounded-lg font-bold transition transform hover:scale-105 flex items-center justify-center"
 					>
 						<i class="fas fa-phone mr-2"></i> Contactar asesor
@@ -116,7 +122,7 @@
 		.hero-content {
 			padding-top: 0;
 			justify-content: center;
-			text-align: center;
+			text-align: left;
 		}
 
 		.hero-text-container {

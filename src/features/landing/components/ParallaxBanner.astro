@@ -1,3 +1,7 @@
+---
+import { getWhatsappUrl } from "src/utils/whatsapp";
+---
+
 <section class="parallax py-24 bg-[url('/src/assets/images/banner.png')] bg-cover bg-center relative">
 	<div class="absolute inset-0 bg-midnight-blue/70 backdrop-blur-xs"></div>
 	<div class="container relative z-10 text-center text-white">
@@ -8,7 +12,9 @@
 			Nuestros agentes están listos para ayudarte en cada paso del camino.
 		</p>
 		<a
-			href="#"
+			href={getWhatsappUrl()}
+			target="_blank"
+			rel="noopener noreferrer"
 			class="inline-block bg-[#fe7f32] hover:bg-[#e6732b] text-white px-8 py-4 rounded font-bold transition"
 			>Contactar un asesor</a
 		>

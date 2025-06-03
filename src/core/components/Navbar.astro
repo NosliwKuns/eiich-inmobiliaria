@@ -1,7 +1,6 @@
 ---
 const navItems = [
 	{ name: "Inicio", href: "/" },
-	{ name: "Vende tu propiedad", href: "/vende" },
 	{ name: "Nosotros", href: "/nosotros" },
 ]
 ---
@@ -15,25 +14,25 @@ const navItems = [
       scrolled = window.scrollY > 10;
     });
     "
-	:class="scrolled ? 'bg-midnight-blue' : 'bg-transparent'"
+	:class="scrolled || open ? 'bg-midnight-blue' : 'bg-transparent'"
 >
 	<div class="container py-3">
 		<div class="flex justify-between items-center">
 			<div class="flex items-center">
-				<a href="#" class="text-2xl font-bold">
+				<a href="/" class="text-2xl font-bold">
 					<span class="text-dark-orange">Eiich</span> Inmobiliaria
 				</a>
 			</div>
 
 			<!-- Botón menú móvil -->
-			<div class="md:hidden">
+			<div class="lg:hidden">
 				<button @click="open = !open" class="text-white focus:outline-none">
 					<i :class="open ? 'fas fa-times text-2xl' : 'fas fa-bars text-2xl'"></i>
 				</button>
 			</div>
 
 			<!-- Menú escritorio -->
-			<div class="hidden md:flex items-center text-sm space-x-8">
+			<div class="hidden lg:flex items-center text-sm space-x-8">
 				{
 					navItems.map((item) => (
 						<a href={item.href} class="hover:text-dark-orange transition">
@@ -42,38 +41,34 @@ const navItems = [
 					))
 				}
 				<a
-					href="#"
-					class="bg-transparent border border-white px-8 py-2.5 rounded hover:bg-white hover:text-midnight-blue transition"
+					href="/vende"
+					class="bg-transparent border border-white px-6 py-2.5 rounded hover:bg-white hover:text-midnight-blue transition"
 				>
-					Contacto
-				</a>
-				<!-- <div class="hidden md:flex items-center text-sm space-x-8">
-				<a href="#" class="hover:text-dark-orange transition">Inicio</a>
-				<a href="#" class="hover:text-dark-orange transition">Propiedades</a>
-				<a href="#" class="hover:text-dark-orange transition">Vende tu propiedad</a>
-				<a href="#" class="hover:text-dark-orange transition">Nosotros</a>
-				<a
-					href="#"
-					class="bg-transparent border border-white px-8 py-2.5 rounded hover:bg-white hover:text-midnight-blue transition"
-				>
-					Contacto
-				</a>
-			</div> -->
-			</div>
-
-			<!-- Menú móvil -->
-			<div x-show="open" x-transition class="md:hidden mt-4 pb-4">
-				<a href="#" class="block py-2 hover:text-dark-orange transition">Inicio</a>
-				<a href="#" class="block py-2 hover:text-dark-orange transition">Propiedades</a>
-				<a href="#" class="block py-2 hover:text-dark-orange transition">Vende tu propiedad</a>
-				<a href="#" class="block py-2 hover:text-dark-orange transition">Nosotros</a>
-				<a
-					href="#"
-					class="block bg-dark-orange px-4 py-2 rounded hover:bg-white hover:text-midnight-blue transition w-max mt-2"
-				>
-					Contacto
+					Vende tu propiedad
 				</a>
 			</div>
 		</div>
+		<!-- Menú móvil -->
+		<div x-show="open" x-transition x-cloak class="lg:hidden mt-4 pb-4">
+			{
+				navItems.map((item) => (
+					<a href={item.href} class="block py-2 hover:text-dark-orange transition">
+						{item.name}
+					</a>
+				))
+			}
+			<a
+				href="/vende"
+				class="block bg-dark-orange px-4 py-2 rounded hover:bg-white hover:text-midnight-blue transition w-max mt-2"
+			>
+				Vende tu propiedad
+			</a>
+		</div>
 	</div>
 </nav>
+
+<style>
+	[x-cloak] {
+		display: none !important;
+	}
+</style>

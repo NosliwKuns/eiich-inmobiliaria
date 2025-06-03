@@ -1,0 +1,175 @@
+---
+import MainLayout from "@core/layouts/MainLayout.astro"
+---
+
+<MainLayout title="Vende tu inmueble">
+	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
+
+	<div class="container">
+		<div class="text-center my-12">
+			<h1 class="text-3xl md:text-4xl font-bold text-[#0c2647] mb-4">Vende tu propiedad con nosotros</h1>
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+				Déjanos tus datos y un asesor especializado se contactará contigo para ayudarte a vender al mejor
+				precio.
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<!-- Contact Form -->
+			<div class="contact-card bg-white rounded-xl p-8">
+				<h2 class="text-2xl font-bold text-[#0c2647] mb-6 flex items-center">
+					<i class="fas fa-user-tie text-[#fe7f32] mr-3"></i>
+					Contacta a un asesor
+				</h2>
+
+				<form class="space-y-5">
+					<div>
+						<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo*</label>
+						<input
+							type="text"
+							id="name"
+							class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5193e6] focus:border-[#5193e6] outline-none transition"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono*</label>
+						<input
+							type="tel"
+							id="phone"
+							class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5193e6] focus:border-[#5193e6] outline-none transition"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700 mb-1"
+							>Correo electrónico*</label
+						>
+						<input
+							type="email"
+							id="email"
+							class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5193e6] focus:border-[#5193e6] outline-none transition"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="property-address" class="block text-sm font-medium text-gray-700 mb-1"
+							>Dirección de la propiedad</label
+						>
+						<input
+							type="text"
+							id="property-address"
+							class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5193e6] focus:border-[#5193e6] outline-none transition"
+							placeholder="Opcional"
+						/>
+					</div>
+
+					<div>
+						<label for="message" class="block text-sm font-medium text-gray-700 mb-1"
+							>¿Algo que debamos saber?</label
+						>
+						<textarea
+							id="message"
+							rows="3"
+							class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5193e6] focus:border-[#5193e6] outline-none transition"
+						></textarea>
+					</div>
+
+					<div class="pt-2">
+						<button
+							type="submit"
+							class="w-full bg-[#fe7f32] hover:bg-[#e6732d] text-white font-bold py-4 px-6 rounded-lg transition shadow-md hover:shadow-lg flex items-center justify-center"
+						>
+							<i class="fas fa-paper-plane mr-2"></i> Enviar solicitud
+						</button>
+					</div>
+
+					<p class="text-sm text-gray-500 text-center">
+						Un asesor se contactará contigo en menos de 24 horas.
+					</p>
+				</form>
+			</div>
+
+			<!-- Benefits Sidebar -->
+			<div class="space-y-6">
+				<div class="bg-[#f4efea] rounded-xl p-6 border-l-4 border-[#fe7f32]">
+					<h3 class="text-xl font-bold text-[#0c2647] mb-3 flex items-center">
+						<i class="fas fa-medal text-[#fe7f32] mr-2"></i>
+						¿Por qué vender con nosotros?
+					</h3>
+					<ul class="space-y-3">
+						<li class="flex items-start">
+							<i class="fas fa-check-circle text-[#5193e6] mt-1 mr-2"></i>
+							<span>Fotografía profesional incluida</span>
+						</li>
+						<li class="flex items-start">
+							<i class="fas fa-check-circle text-[#5193e6] mt-1 mr-2"></i>
+							<span>Publicación en portales inmobiliarios</span>
+						</li>
+						<li class="flex items-start">
+							<i class="fas fa-check-circle text-[#5193e6] mt-1 mr-2"></i>
+							<span>Atención personalizada durante todo el proceso</span>
+						</li>
+						<li class="flex items-start">
+							<i class="fas fa-check-circle text-[#5193e6] mt-1 mr-2"></i>
+							<span>Presencia activa en redes sociales y campañas locales</span>
+						</li>
+						<li class="flex items-start">
+							<i class="fas fa-check-circle text-[#5193e6] mt-1 mr-2"></i>
+							<span>Nos encargamos de mostrar tu propiedad a potenciales clientes</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+					<div class="flex items-start mb-4">
+						<div
+							class="bg-[#5193e6] bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4"
+						>
+							<i class="fas fa-headset text-white text-xl"></i>
+						</div>
+						<div>
+							<h3 class="text-lg font-bold text-[#0c2647]">¿Prefieres hablar ahora?</h3>
+							<p class="text-gray-600">Llama a nuestro equipo de asesores</p>
+						</div>
+					</div>
+					<a
+						href="tel:+51992096134"
+						class="block w-full bg-[#5193e6] hover:bg-[#3a7bc8] text-white font-bold py-3 px-6 rounded-lg transition text-center"
+					>
+						<i class="fas fa-phone mr-2"></i> 992 096 134
+					</a>
+				</div>
+
+				<div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+					<h3 class="text-lg font-bold text-[#0c2647] mb-3">Horario de atención</h3>
+					<ul class="space-y-2">
+						<li class="flex justify-between">
+							<span class="text-gray-600">Lunes a Viernes</span>
+							<span class="font-medium">9:00 - 18:00</span>
+						</li>
+						<li class="flex justify-between">
+							<span class="text-gray-600">Sábados</span>
+							<span class="font-medium">10:00 - 14:00</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container h-16 w-full"></div>
+</MainLayout>
+
+<style>
+	.contact-card {
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+	}
+
+	.form-input:focus {
+		box-shadow: 0 0 0 3px rgba(81, 147, 230, 0.3);
+	}
+</style>
