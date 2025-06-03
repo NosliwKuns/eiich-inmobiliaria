@@ -1,5 +1,8 @@
 ---
-import PropertiesCard from "@core/components/PropertiesCard.astro"
+import properties from "@features/properties/data/properties.json"
+import PropertiesCard from "@features/properties/components/PropertyCard.astro"
+
+const recentProperties = properties.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 ---
 
 <!-- Recent Properties -->
@@ -15,11 +18,19 @@ import PropertiesCard from "@core/components/PropertiesCard.astro"
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			<PropertiesCard />
-
-			<PropertiesCard />
-
-			<PropertiesCard />
+			{
+				recentProperties.map((property) => (
+					<PropertiesCard
+						title={property.title}
+						location={property.location}
+						bathrooms={property.bathrooms}
+						area={property.area}
+						rooms={property.rooms}
+						image={property.images[0]}
+						floors={property.floors}
+					/>
+				))
+			}
 		</div>
 
 		<div class="text-center mt-12">

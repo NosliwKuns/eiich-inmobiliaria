@@ -1,0 +1,28 @@
+[{
+	"id": "prop-001",
+	"title": "¡Gran oportunidad de inversión en plena Av. Perú!",
+	"address": "Av. Perú 3775, San Martín de Porres, Lima",
+	"area": 360,
+	"rooms": 15,
+	"bathrooms": null,
+	"floors": 4,
+	"location": "San Martín de Porres, Lima",
+	"description": "Se vende amplio inmueble de 4 pisos, estratégicamente ubicado en una de las avenidas más transitadas y comerciales de Lima Norte: Av. Perú 3775, San Martín de Porres.",
+	"highlights": [
+		"Ideal para hostal, oficinas, consultorios, academias o proyecto multifamiliar.",
+		"Excelente conectividad y alto flujo peatonal y vehicular.",
+		"Cerca de mercados, bancos, colegios, comercios y paraderos.",
+		"Ubicación céntrica, alto potencial comercial y gran retorno de inversión."
+	],
+	"images": [
+		"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888365/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/epowwdo0abf72itmvuwx.webp",
+		"/images/propiedades/prop-001/room.jpg",
+		"/images/propiedades/prop-001/roof.jpg"
+	],
+	"contact": {
+		"message": "Contáctanos para más detalles o agendar una visita."
+	},
+	"tagline": "Haz crecer tu inversión en el corazón de Lima Norte.",
+	"featured": true,
+	"createdAt": "2025-06-01"
+}]
