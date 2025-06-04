@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eiichinmobiliaria.com/sitemap.xml

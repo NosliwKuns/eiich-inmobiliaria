@@ -7,16 +7,18 @@ import alpinejs from "@astrojs/alpinejs"
 
 import vercel from "@astrojs/vercel";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
-	vite: {
-		plugins: [tailwindcss()],
-	},
+    vite: {
+        plugins: [tailwindcss()],
+    },
 
-	integrations: [alpinejs({ entrypoint: "/src/entrypoint" })],
-	adapter: vercel({
-		webAnalytics: {
-			enabled: true,
-		},
-	}),
+    integrations: [alpinejs({ entrypoint: "/src/entrypoint" }), sitemap()],
+    adapter: vercel({
+        webAnalytics: {
+            enabled: true,
+        },
+    }),
 })
