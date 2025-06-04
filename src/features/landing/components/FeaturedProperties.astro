@@ -3,10 +3,9 @@ import properties from "@features/properties/data/properties.json"
 import PropertiesCard from "@features/properties/components/PropertyCard.astro"
 
 const featured = properties.filter((p) => p.featured)
-
 ---
 
-<section id="featured" class="pb-16 pt-6 bg-white">
+<section id="featured" class="pb-16 pt-6 bg-white scroll-mt-16">
 	<div class="container mx-auto px-4">
 		<div class="text-center mb-12">
 			<h2 class="text-3xl md:textS-4xl font-bold uppercase mb-4">
@@ -17,18 +16,20 @@ const featured = properties.filter((p) => p.featured)
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 			<!-- Property Cards -->
-			{featured.map((property) => (
-				<PropertiesCard
-					title={property.title} 
-					slug={property.slug}
-					location={property.location}
-					bathrooms={property.bathrooms}
-					area={property.area}
-					rooms={property.rooms}
-					image={property.images[0]}
-					floors={property.floors}
-				/>
-			))}
+			{
+				featured.map((property) => (
+					<PropertiesCard
+						title={property.title}
+						slug={property.slug}
+						location={property.location}
+						bathrooms={property.bathrooms}
+						area={property.area}
+						rooms={property.rooms}
+						image={property.images[0]}
+						floors={property.floors}
+					/>
+				))
+			}
 		</div>
 
 		<div class="text-center mt-12">
