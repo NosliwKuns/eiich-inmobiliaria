@@ -2,6 +2,7 @@
 import "@core/styles/global.css"
 import Navbar from "@core/components/Navbar.astro"
 import Footer from "@core/components/Footer.astro"
+import Analytics from "@vercel/analytics/astro"
 
 export interface Props {
 	title: string
@@ -40,6 +41,7 @@ const { title, description = "Eiich Inmobiliaria - Tu hogar ideal te está esper
 		<meta name="twitter:card" content="summary_large_image" />
 	</head>
 	<body>
+		<Analytics />
 		<Navbar />
 		<slot />
 		<Footer />
