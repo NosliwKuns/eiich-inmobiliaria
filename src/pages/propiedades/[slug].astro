@@ -68,17 +68,26 @@ console.log(envConfig)
 
 	<!-- Gallery -->
 	<section class="container mb-8">
-		<div class="gallery-grid rounded-xl overflow-hidden">
-			<div class="gallery-main bg-cover bg-center" style={`background-image: url(${prts?.images[0]})`}></div>
+		<div id="gallery-grid" class="rounded-xl overflow-hidden">
+			<div class="gallery-main bg-cover bg-center">
+				<a href={prts?.images[0]} class="block h-full w-full" target="_blank">
+					<img src={prts?.images[0]} alt="" class="h-full w-full object-cover" />
+				</a>
+			</div>
 			{
-				prts?.images
-					.slice(1, 5)
-					.map((img, i) => (
-						<div
-							class={`gallery-thumbnail ${["one", "two", "three", "four"][i]} bg-cover bg-center`}
-							style={`background-image: url(${img})`}
-						/>
-					))
+				prts?.images.slice(1, 5).map((img, i) => (
+					<div class={`gallery-thumbnail ${["one", "two", "three", "four"][i]} relative object-cover`}>
+						<a
+							href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+							class="block h-full w-full"
+							data-pswp-width="1875"
+							data-pswp-height="2500"
+							target="_blank"
+						>
+							<img src={prts?.images[0]} class="h-full w-full object-cover" alt="" />
+						</a>
+					</div>
+				))
 			}
 		</div>
 		<div class="mt-4 flex justify-center">
@@ -244,8 +253,20 @@ console.log(envConfig)
 	<div class="container h-16 w-full"></div>
 </MainLayout>
 
+<script>
+	import PhotoSwipeLightbox from "photoswipe/lightbox"
+	import "photoswipe/style.css"
+
+	const lightbox = new PhotoSwipeLightbox({
+		gallery: "#gallery-grid",
+		children: "a",
+		pswpModule: () => import("photoswipe"),
+	})
+	lightbox.init()
+</script>
+
 <style>
-	.gallery-grid {
+	#gallery-grid {
 		display: grid;
 		grid-template-columns: 50% 25% 25%;
 		grid-template-rows: repeat(2, 1fr);
