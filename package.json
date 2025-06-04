@@ -11,6 +11,7 @@
   "dependencies": {
     "@alpinejs/intersect": "^3.14.9",
     "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/vercel": "^8.1.5",
     "@tailwindcss/vite": "^4.1.7",
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.14.9",
