@@ -18,17 +18,61 @@
 			"Ubicación céntrica, alto potencial comercial y gran retorno de inversión."
 		],
 		"images": [
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888365/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/epowwdo0abf72itmvuwx.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/ecu3c0retlvfssald3jf.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989222/ChatGPT_Image_3_jun_2025_11_01_30_a.m__cpnfdn.png",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/2_p9kzpa.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/gmhnj0djfsqrwl7ttxcy.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/4_tzzcc7.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Per%C3%BA/bayzcpoxi64e06mtar0p.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990001/IMG_0493_mtrpwg.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/5_yc4zdc.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/fotos_1_1_vl13iv.webp",
-			"https://res.cloudinary.com/dsbifsorx/image/upload/v1748989999/3_sznsko.webp"
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748888365/EIICH%20inmobiliaria/Hotel%20Av.%20Perú/epowwdo0abf72itmvuwx.webp",
+				"alt": "Fachada del hotel desde la avenida",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Perú/ecu3c0retlvfssald3jf.webp",
+				"alt": "Vista lateral del hotel",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748989222/ChatGPT_Image_3_jun_2025_11_01_30_a.m__cpnfdn.png",
+				"alt": "Plano generado del entorno",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/2_p9kzpa.webp",
+				"alt": "Habitación moderna con decoración clara",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Perú/gmhnj0djfsqrwl7ttxcy.webp",
+				"alt": "Vista del lobby del hotel",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748989998/4_tzzcc7.webp",
+				"alt": "Área común con mobiliario moderno",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748888364/EIICH%20inmobiliaria/Hotel%20Av.%20Perú/bayzcpoxi64e06mtar0p.webp",
+				"alt": "Pasillo interior con iluminación cálida",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748990001/IMG_0493_mtrpwg.webp",
+				"alt": "Terraza con vista al exterior",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/5_yc4zdc.webp",
+				"alt": "Baño con acabados modernos",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748990000/fotos_1_1_vl13iv.webp",
+				"alt": "Plano detallado de la distribución",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1748989999/3_sznsko.webp",
+				"alt": "Recepción del hotel",
+				"orientation": "h"
+			}
 		],
 		"contact": {
 			"message": "Contáctanos para más detalles o agendar una visita."
