@@ -73,7 +73,7 @@ console.log(envConfig)
 		<div class="l2">
 			<!-- Title and location -->
 			<div class="mb-6">
-				<h1 class="text-3xl md:text-4xl font-bold text-[#0c2647] mb-2">{property?.title}</h1>
+				<h1 class="text-xl md:text-3xl lg:text-4xl font-bold text-[#0c2647] mb-2">{property?.title}</h1>
 				<div class="flex items-center text-gray-600">
 					<i class="fas fa-map-marker-alt text-[#fe7f32] mr-2"></i>
 					<span>{property?.location}</span>
@@ -124,7 +124,7 @@ console.log(envConfig)
 
 			<!-- Description -->
 			<div class="mb-8">
-				<h2 class="text-2xl font-bold text-[#0c2647] mb-4">Descripción de la propiedad</h2>
+				<h2 class="text-xl md:text-2xl font-bold text-[#0c2647] mb-4">Descripción de la propiedad</h2>
 				<div class="prose max-w-none">
 					<p class="mb-4 text-gray-700">{property?.description}</p>
 				</div>
@@ -132,7 +132,7 @@ console.log(envConfig)
 
 			<!-- Features -->
 			<div class="mb-8">
-				<h2 class="text-2xl font-bold text-[#0c2647] mb-4">Características destacadas</h2>
+				<h2 class="text-xl md:text-2xl font-bold text-[#0c2647] mb-4">Características destacadas</h2>
 				<div class="flex flex-wrap gap-3">
 					{
 						property?.highlights.map((highlight) => (
