@@ -1,0 +1,122 @@
+---
+export interface Props {
+	variant?: "primary" | "secondary" | "tertiary" | "outline"
+	size?: "sm" | "md" | "lg"
+	icon?: string
+	iconPosition?: "left" | "right"
+	disabled?: boolean
+	type?: "button" | "submit" | "reset"
+	href?: string
+	target?: "_blank" | "_self"
+	class?: string
+}
+
+const {
+	variant = "primary",
+	size = "md",
+	icon,
+	iconPosition = "left",
+	disabled = false,
+	type = "button",
+	href,
+	target = "_self",
+	class: className = "",
+	...props
+} = Astro.props
+
+// Clases base
+const baseClasses = [
+	"border-[1.5px]",
+	"leading-none",
+	"inline-flex",
+	"items-center",
+	"justify-center",
+	"gap-2",
+	"font-medium",
+	"rounded-lg",
+	"transition-all",
+	"duration-200",
+	"focus:outline-none",
+	"focus:ring-2",
+	"focus:ring-offset-2",
+	"disabled:opacity-50",
+	"disabled:cursor-not-allowed",
+]
+
+// Variantes de color
+const variants = {
+	primary: [
+		"bg-dark-orange",
+		"hover:bg-orange-600",
+		"text-white",
+		"shadow-sm",
+		"hover:shadow-md",
+		"focus:ring-orange-500",
+		"border-dark-orange",
+	],
+	secondary: [
+		"bg-blue-500",
+		"hover:bg-blue-600",
+		"text-white",
+		"shadow-sm",
+		"hover:shadow-md",
+		"focus:ring-blue-500",
+	],
+	tertiary: [
+		"bg-slate-700",
+		"hover:bg-slate-800",
+		"text-white",
+		"shadow-sm",
+		"hover:shadow-md",
+		"focus:ring-slate-500",
+	],
+	outline: [
+		"bg-transparent",
+		"",
+		"border-white",
+		"text-white",
+		"hover:bg-blue-50",
+		"focus:ring-blue-500",
+	],
+}
+
+// Tamaños
+const sizes = {
+	sm: ["px-6", "py-2.5", "text-sm"],
+	md: ["px-6", "py-4", "text-base"],
+	lg: ["px-6", "py-4.5", "text-lg"],
+}
+
+// Construir clases finales
+const buttonClasses = [...baseClasses, ...variants[variant], ...sizes[size], className]
+	.filter(Boolean)
+	.join(" ")
+
+// Componente Tag (button o a)
+const Tag = href ? "a" : "button"
+const tagProps = href ? { href, target } : { type, disabled }
+---
+
+<Tag class={buttonClasses} {...tagProps} {...props}>
+	{icon && iconPosition === "left" && <i class={icon} aria-hidden="true" />}
+	<slot />
+	{icon && iconPosition === "right" && <i class={icon} aria-hidden="true" />}
+</Tag>
+
+<style>
+	/* Animaciones adicionales si las necesitas */
+	button,
+	a {
+		transform: translateY(0);
+	}
+
+	button:hover:not(:disabled),
+	a:hover {
+		transform: translateY(-1px);
+	}
+
+	button:active:not(:disabled),
+	a:active {
+		transform: translateY(0);
+	}
+</style>
