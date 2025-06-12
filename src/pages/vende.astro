@@ -1,8 +1,15 @@
 ---
 import MainLayout from "@core/layouts/MainLayout.astro"
+
+const metadata = {
+	title: "Vende tu inmueble | Eiich Inmobiliaria",
+	description:
+		"Vende tu propiedad con Eiich Inmobiliaria. Contáctanos y un asesor especializado te ayudará a obtener el mejor precio.",
+	url: "https://www.eiichinmobiliaria.com/vende",
+}
 ---
 
-<MainLayout title="Vende tu inmueble">
+<MainLayout title={metadata.title} description={metadata.description}>
 	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
 
 	<div class="container">

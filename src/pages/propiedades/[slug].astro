@@ -24,10 +24,15 @@ ${url}
 `)
 const link = `https://wa.me/${phone}?text=${mensaje}`
 
-console.log(envConfig)
+const metadata = {
+	title: property?.title || "Propiedad",
+	description: property?.description || "Descripción de la propiedad",
+	url: `${envConfig?.clientUrl}/propiedades/${property?.slug}`,
+	image: property?.images[0].src || "/default-image.jpg",
+}
 ---
 
-<MainLayout title="Propiedades">
+<MainLayout title={metadata.title} description={metadata.description} image={metadata.image}>
 	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
 
 	<div class="container py-4 overflow-hidden">
