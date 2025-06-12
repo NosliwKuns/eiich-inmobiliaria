@@ -1,11 +1,15 @@
 ---
 import Button from "@core/ui/Button.astro"
-import { getWhatsappUrl } from "src/utils/whatsapp"
+import { getWhatsappLink } from "src/utils/whatsapp"
 ---
 
 <section class="relative h-[900px] md:h-[800px] lg:h-[620px] xl:h-[800px] overflow-hidden">
 	<div id="parallax-bg" class="absolute top-0 left-0 w-full h-full bg-[#3c6da9] -z-20"></div>
-	<div id="building-image" class="absolute right-0 top-[520px] md:top-[420px] w-full h-[500px] lg:top-0 lg:h-full -z-10 lg:w-1/2"></div>
+	<div
+		id="building-image"
+		class="absolute right-0 top-[520px] md:top-[420px] w-full h-[500px] lg:top-0 lg:h-full -z-10 lg:w-1/2"
+	>
+	</div>
 
 	<!-- Floating decorative elements -->
 	<div class="floating-element left-10 top-1/4 opacity-20">
@@ -27,7 +31,7 @@ import { getWhatsappUrl } from "src/utils/whatsapp"
 				<div class="flex flex-col sm:flex-row gap-4 justify-start">
 					<Button href="#featured" variant="primary" icon="fas fa-search" size="md">Buscar propiedades</Button
 					>
-					<Button href={getWhatsappUrl()} target="_blank" variant="outline" icon="fas fa-phone" size="md"
+					<Button href={getWhatsappLink()} target="_blank" variant="outline" icon="fas fa-phone" size="md"
 						>Contactar asesor</Button
 					>
 				</div>

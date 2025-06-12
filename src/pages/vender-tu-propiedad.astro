@@ -1,15 +1,17 @@
 ---
 import MainLayout from "@core/layouts/MainLayout.astro"
 
+const whatsappMessage = `Hola, estoy interesado en vender mi propiedad. Me gustaría obtener más información sobre sus servicios.`
+
 const metadata = {
 	title: "Vende tu inmueble | Eiich Inmobiliaria",
 	description:
 		"Vende tu propiedad con Eiich Inmobiliaria. Contáctanos y un asesor especializado te ayudará a obtener el mejor precio.",
-	url: "https://www.eiichinmobiliaria.com/vende",
+	url: "https://www.eiichinmobiliaria.com/vender-tu-propiedad",
 }
 ---
 
-<MainLayout title={metadata.title} description={metadata.description}>
+<MainLayout title={metadata.title} description={metadata.description} url={metadata.url} whatsappMessage={whatsappMessage}>
 	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
 
 	<div class="container">

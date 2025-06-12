@@ -1,0 +1,25 @@
+---
+import { getWhatsappLink } from "src/utils/whatsapp"
+
+interface Props {
+	message?: string
+	url: string
+}
+
+const pathname = Astro.url.pathname
+const { message, url } = Astro.props
+const isDetail = pathname.startsWith("/propiedades/")
+const isSeller = pathname.startsWith("/vender-tu-propiedad")
+
+const whatsappLink = isDetail ? getWhatsappLink(message, url) : isSeller ? getWhatsappLink(message) : getWhatsappLink()
+---
+
+<a
+	href={whatsappLink}
+	target="_blank"
+	rel="noopener noreferrer"
+	aria-label="Habla con nosotros por WhatsApp"
+	class={`fixed z-50 bg-green-500 hover:bg-green-600 text-white rounded-full grid place-content-center size-15 shadow-lg transition-transform duration-300 hover:scale-110 bottom-4 right-4`}
+>
+	<i class="fab fa-whatsapp text-3xl"></i>
+</a>

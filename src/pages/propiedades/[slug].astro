@@ -2,7 +2,8 @@
 import MainLayout from "@core/layouts/MainLayout.astro"
 import properties from "@features/properties/data/properties.json"
 import PropertyGallery from "@features/properties/components/PropertyGallery.astro"
-import { envConfig } from "src/config/env"
+import { CLIENT_URL } from "astro:env/client"
+import { getWhatsappLink } from "src/utils/whatsapp"
 
 export async function getStaticPaths() {
 	return properties.map((prop) => ({
@@ -13,26 +14,18 @@ export async function getStaticPaths() {
 
 const { property } = Astro.props
 
-const phone = "51992096134" // Perú
-const name = property?.title
-const url = `${envConfig?.clientUrl}/propiedades/${property?.slug}`
-const mensaje = encodeURIComponent(`
-Hola, estoy interesado en este inmueble:
-${name}
-
-${url}
-`)
-const link = `https://wa.me/${phone}?text=${mensaje}`
+const message = `Hola, estoy interesado en esta propiedad. Me gustaría obtener más información.`
+const url = `${CLIENT_URL}/propiedades/${property?.slug}`
 
 const metadata = {
 	title: property?.title || "Propiedad",
 	description: property?.description || "Descripción de la propiedad",
-	url: `${envConfig?.clientUrl}/propiedades/${property?.slug}`,
+	url: url,
 	image: property?.images[0].src || "/default-image.jpg",
 }
 ---
 
-<MainLayout title={metadata.title} description={metadata.description} image={metadata.image}>
+<MainLayout title={metadata.title} description={metadata.description} image={metadata.image} url={metadata.url} whatsappMessage={message}>
 	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
 
 	<div class="container py-4 overflow-hidden">
@@ -161,7 +154,7 @@ const metadata = {
 					{property?.contact.message}
 				</p>
 				<a
-					href={link}
+					href={getWhatsappLink(message, url)}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-2 bg-midnight-blue text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#0c2647]/90 transition"

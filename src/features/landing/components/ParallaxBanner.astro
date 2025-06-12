@@ -1,5 +1,5 @@
 ---
-import { getWhatsappUrl } from "src/utils/whatsapp";
+import { getWhatsappLink } from "src/utils/whatsapp"
 ---
 
 <section class="parallax py-24 bg-[url('/images/banner.webp')] bg-cover bg-center relative">
@@ -12,7 +12,7 @@ import { getWhatsappUrl } from "src/utils/whatsapp";
 			Nuestros agentes están listos para ayudarte en cada paso del camino.
 		</p>
 		<a
-			href={getWhatsappUrl()}
+			href={getWhatsappLink()}
 			target="_blank"
 			rel="noopener noreferrer"
 			class="inline-block bg-[#fe7f32] hover:bg-[#e6732b] text-white px-8 py-4 rounded font-bold transition"
