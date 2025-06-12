@@ -47,12 +47,13 @@ const baseClasses = [
 const variants = {
 	primary: [
 		"bg-dark-orange",
-		"hover:bg-orange-600",
+		"hover:bg-[#e6732b]",
 		"text-white",
 		"shadow-sm",
 		"hover:shadow-md",
 		"focus:ring-orange-500",
 		"border-dark-orange",
+		"hover:border-[#e6732b]",
 	],
 	secondary: [
 		"bg-blue-500",
@@ -75,7 +76,8 @@ const variants = {
 		"",
 		"border-white",
 		"text-white",
-		"hover:bg-blue-50",
+		"hover:bg-white",
+		"hover:text-midnight-blue",
 		"focus:ring-blue-500",
 	],
 }
@@ -88,9 +90,7 @@ const sizes = {
 }
 
 // Construir clases finales
-const buttonClasses = [...baseClasses, ...variants[variant], ...sizes[size], className]
-	.filter(Boolean)
-	.join(" ")
+const buttonClasses = [...baseClasses, ...variants[variant], ...sizes[size], className].filter(Boolean).join(" ")
 
 // Componente Tag (button o a)
 const Tag = href ? "a" : "button"
