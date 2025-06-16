@@ -25,7 +25,13 @@ const metadata = {
 }
 ---
 
-<MainLayout title={metadata.title} description={metadata.description} image={metadata.image} url={metadata.url} whatsappMessage={message}>
+<MainLayout
+	title={metadata.title}
+	description={metadata.description}
+	image={metadata.image}
+	url={metadata.url}
+	whatsappMessage={message}
+>
 	<div class="h-14 lg:h-[66px] sticky top-0 w-full bg-midnight-blue"></div>
 
 	<div class="container py-4 overflow-hidden">
@@ -218,6 +224,12 @@ const metadata = {
 			</div>
 		</div>
 	</section>
-
+	<!-- <div id="map" style="height: 400px;"></div> -->
 	<div class="container h-16 w-full"></div>
 </MainLayout>
+
+<script>
+	import Mapkick from "src/utils/mapkick.js"
+	const a = new Mapkick.Map("map", [{ latitude: 37.7829, longitude: -122.419 }])
+	console.log(a, "Map initialized")
+</script>
