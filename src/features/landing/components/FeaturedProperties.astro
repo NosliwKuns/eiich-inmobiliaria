@@ -2,7 +2,9 @@
 import properties from "@features/properties/data/properties.json"
 import PropertiesCard from "@features/properties/components/PropertyCard.astro"
 
-const featured = properties.filter((p) => p.featured)
+const featured = properties
+	.filter((p) => p.featured)
+	.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 ---
 
 <section id="featured" class="pb-16 pt-6 bg-white scroll-mt-16">

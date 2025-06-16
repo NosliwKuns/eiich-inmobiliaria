@@ -80,5 +80,111 @@
 		"tagline": "Haz crecer tu inversión en el corazón de Lima Norte.",
 		"featured": true,
 		"createdAt": "2025-06-01"
+	},
+	{
+		"id": "prop-002",
+		"title": "¡Gran oportunidad de inversión en San Bartolo!",
+		"slug": "¡gran-oportunidad-de-inversion-en-san-bartolo",
+		"price": "$270,000 USD",
+		"address": "San Bartolo, Lima",
+		"area": 235,
+		"rooms": 6,
+		"bathrooms": 3,
+		"floors": 2,
+		"location": "San Bartolo, Lima",
+		"description": "Se vende amplia casa de playa de 2 pisos, ubicada en una tranquila urbanización a solo 1 hora de Lima, perfecta para disfrutar o rentabilizar todo el año.",
+		"highlights": [
+			"Ideal para casa de verano, alquiler por temporada o inversión inmobiliaria.",
+			"A pocas cuadras de la playa.",
+			"Zona residencial segura y con alto potencial de valorización."
+		],
+		"images": [
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090557/san-bartolo-01_qli0ai.png",
+				"alt": "Fachada de la casa desde el jardín",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090556/san-bartolo-02_fypriv.jpg",
+				"alt": "Sala de la casa",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090557/san-bartolo-03_tjliia.jpg",
+				"alt": "Terraza con vista al exterior",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090557/san-bartolo-04_uvpvpv.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090557/san-bartolo-05_hxxvar.jpg",
+				"alt": "Vista de la cocina",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090557/san-bartolo-06_zzns5u.jpg",
+				"alt": "Vista del patio desde la terraza",
+				"orientation": "v"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-07_hxxujj.jpg",
+				"alt": "Terraza con vista al exterior",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-08_lvryza.jpg",
+				"alt": "Baño",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-09_tvu1oe.jpg",
+				"alt": "Espacio amplio en la sala",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-10_sp1tx8.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-11_uhxde3.jpg",
+				"alt": "Baño con jacuzzi",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090558/san-bartolo-12_wneyh4.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090559/san-bartolo-13_annnlq.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090559/san-bartolo-14_t98f0w.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090559/san-bartolo-15_lwhvtz.jpg",
+				"alt": "Habitación iluminada",
+				"orientation": "h"
+			},
+			{
+				"src": "https://res.cloudinary.com/dsbifsorx/image/upload/v1750090559/san-bartolo-16_gc4fmn.jpg",
+				"alt": "Vista de la sala",
+				"orientation": "h"
+			}
+		],
+		"contact": {
+			"message": "Contáctanos para más detalles o agendar una visita."
+		},
+		"tagline": "Escapa del ruido de la ciudad sin alejarte demasiado. Invierte en calidad de vida y rentabilidad.",
+		"featured": true,
+		"createdAt": "2025-06-16"
 	}
 ]
