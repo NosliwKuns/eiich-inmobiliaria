@@ -1,6 +1,7 @@
 ---
 import { OptimizeCloudinaryUrl } from "src/utils/cloudinary"
 import type { Image } from "../types/property"
+import Button from "@core/ui/Button.astro"
 
 interface Props {
 	images: Image[]
@@ -14,7 +15,7 @@ const { images = [] } = Astro.props
 		<!-- Imagen principal -->
 		<a
 			href={OptimizeCloudinaryUrl(images[0].src, images[0].orientation, 1200)}
-			class="gallery-main"
+			class="gallery-main overflow-hidden"
 			target="_blank"
 			data-img={OptimizeCloudinaryUrl(images[0].src, images[0].orientation, 1200)}
 			data-cropped="true"
@@ -22,7 +23,7 @@ const { images = [] } = Astro.props
 			<img
 				src={OptimizeCloudinaryUrl(images[0].src, images[0].orientation, 800)}
 				alt={images[0].alt}
-				class="bg-gray-200"
+				class="bg-gray-200 hover:scale-110 transition-transform duration-500"
 				loading="lazy"
 			/>
 		</a>
@@ -36,12 +37,19 @@ const { images = [] } = Astro.props
 				return (
 					<a
 						href={full}
-						class={`gallery-thumbnail ${["one", "two", "three", "four"][i]} ${i > 3 && "hidden"}`}
+						class={`gallery-thumbnail relative ${["one", "two", "three", "four"][i]} ${i > 3 && "hidden"} overflow-hidden`}
 						target="_blank"
 						data-img={full}
 						data-cropped="true"
 					>
-						{i < 4 && <img src={thumb} alt={img.alt} class="bg-gray-200" loading="lazy" />}
+						{i < 4 && (
+							<img
+								src={thumb}
+								alt={img.alt}
+								class="bg-gray-200 hover:scale-110 transition-transform duration-500"
+								loading="lazy"
+							/>
+						)}
 					</a>
 				)
 			})
@@ -49,13 +57,10 @@ const { images = [] } = Astro.props
 	</div>
 
 	<!-- Botón Ver todas -->
-	<div class="mt-4 flex justify-center">
-		<button
-			id="open-gallery"
-			class="text-[#5193e6] hover:text-[#0c2647] cursor-pointer font-medium flex items-center"
-		>
-			<i class="fas fa-images mr-2"></i>Ver todas las fotos ({images.length})
-		</button>
+	<div class="relative flex w-fit mx-auto bg-white mt-4">
+		<Button variant="secondary" id="open-gallery" size="sm" class="bg-gray-200">
+			Ver todas las fotos ({images.length})
+		</Button>
 	</div>
 </section>
 
@@ -127,6 +132,7 @@ const { images = [] } = Astro.props
 
 <style>
 	#gallery-grid {
+		position: relative;
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-rows: repeat(2, 1fr);
