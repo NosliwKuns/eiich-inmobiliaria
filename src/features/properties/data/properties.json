@@ -78,6 +78,7 @@
 			"message": "Contáctanos para más detalles o agendar una visita."
 		},
 		"tagline": "Haz crecer tu inversión en el corazón de Lima Norte.",
+		"mapIframeUrl": "https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=es&amp;q=Av.%20Per%C3%BA%203775,%20Callao%2015106+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
 		"featured": true,
 		"createdAt": "2025-06-01"
 	},
@@ -184,6 +185,7 @@
 			"message": "Contáctanos para más detalles o agendar una visita."
 		},
 		"tagline": "Escapa del ruido de la ciudad sin alejarte demasiado. Invierte en calidad de vida y rentabilidad.",
+		"mapIframeUrl": "https://maps.google.com/maps?width=100%25&height=350&hl=es&q=-12.384274,%20-76.775007+(San%20Bartolo)&t=&z=15&ie=UTF8&iwloc=B&output=embed",
 		"featured": true,
 		"createdAt": "2025-06-16"
 	}
